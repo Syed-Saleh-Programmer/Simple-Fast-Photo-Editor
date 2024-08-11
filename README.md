@@ -1,4 +1,4 @@
-# **Photo Editor App Documentation**
+# **Simple Fast Photo Editor App**
 
 ## **Overview**
 

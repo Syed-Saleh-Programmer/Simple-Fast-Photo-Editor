@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&family=Kalam:wght@300;400;700&family=Lato:wght@300;400;700&family=Montserrat+Alternates:wght@200;300;500;600&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Slabo+27px&display=swap');
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+button{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+/* code for the sliders */
+input[type="range"] {
+    appearance: none;
+    background: #242222;
+    border-radius: 15px;
+    cursor:pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 2px;
+    background: #aeaeae;
+    border-radius: 8px;
+}
+
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    position: relative;
+    top: -10px;
+    width: 4px;
+    height: 20px;
+    background: #757575;
+    border: none;
+    border-radius: 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+    background: #242222;
+}
+
+
+
+
+
+
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #eeeeef;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-header{
+    width: 100vw;
+    height: fit-content;
+    text-align: center;
+    font-size: 36px;
+    color: #757575;
+    margin-bottom: 50px;
+}
+
+.app-header sup{
+    color: #757575;
+}
+
+.app{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: fit-content;
+    max-width: 1100px;
+    min-width: 800px;
+    height: fit-content;
+    max-height: 420px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.options-container{
+    position: relative;
+    width: fit-content;
+    min-width: 340px;
+    height: 100%;
+    min-height: 420px;
+    background: #fff;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: top;
+    align-items: left;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 1px #cdcdcd;
+}
+
+.options-container h3.options-head{
+    color: #757575;
+}
+
+
+
+.options-container div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 30px;
+}
+
+.options-container div label {
+    font-size: 13.5px;
+    color: #919191;
+}
+
+
+
+.photo-container{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: fit-content;
+    min-width: 340px;
+    max-width: 800px;
+    height: fit-content;
+    min-height: 420px;
+    max-height: 500px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    border: 6px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 1;
+    transition: all .23s ease;
+    box-shadow: 0 0 1px 1px #cdcdcd;
+    /* object-fit: cover; */
+    /* gap: 10px; */
+    
+}
+
+.photo-container:hover{
+    opacity: 0.8;
+}
+
+.photo-container img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+.photo-container input{
+    width: 0;
+    height: 0px;
+    background: #fff;
+    pointer-events: none;
+}
+
+
+
+.photo-container input::-webkit-file-upload-button{
+    position: relative;
+    width: 0;
+    height: 0px;
+    background: #fff;
+    color: #242222;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    /* font-weight: bolder; */
+    cursor: pointer;
+    transition: all .2s ease;
+
+    
+}
+
+.photo-container input::-webkit-file-upload-button:hover{
+    background: #9105cc;
+}
+
+#download-btn{
+    display: none;
+    width: fit-content;
+    height: fit-content;
+    background: #757575;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px;
+    border: 1px solid #757575;
+    font-style: normal;
+    font-weight: normal;
+    border-radius: 5px;
+}
+
+canvas{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}

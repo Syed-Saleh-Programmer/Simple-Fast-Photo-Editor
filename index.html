@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="app-header">
+            RizviSoft <sup>&copy;</sup> Photo Editor
+        </h1>
+        <div class="app">
+            <div class="options-container">
+                <h3 class="options-head">
+                    Settings
+                </h3>
+                <div class="brightness-option">
+                    <label for="brightness">brightness : </label>
+                    <input type="range" name="brightness" class="brightness" min="0.2" max="2" step="0.05" value="1">
+                </div>
+                <div class="contrast-option">
+                    <label for="contrast">contrast : </label>
+                    <input type="range" name="contrast" class="contrast" min="0.1" max="10" step="0.05" value="1">
+                </div>
+                <div class="gray-scale-option">
+                    <label for="gray-scale">gray-scale : </label>
+                    <input type="range" name="gray-scale" class="gray-scale" min="0" max="1" step=".1" value="0">
+                </div>
+                <div class="hue-rotate-option">
+                    <label for="hue-rotate">hue-rotate : </label>
+                    <input type="range" name="hue-rotate" class="hue-rotate" min="0" max="360" step="20" value="0">
+                </div>
+                <div class="blur-option">
+                    <label for="blur-option">blur : </label>
+                    <input type="range" name="blur" class="blur" min="0" max="20" step=".3" value="0">
+                </div>
+                <div class="saturation-option">
+                    <label for="saturation">Color Saturation : </label>
+                    <input type="range" name="saturation" class="saturation" min="0" max="1" step=".1" value="0">
+                </div>
+                <button id="download-btn">Download</button>
+            </div>
+            <div class="photo-container">
+                <img src="assets/img-placeholder.png" alt="uploaded photo" class="image-input">
+                <input type="file" name="upload-btn" id="upload-btn">
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

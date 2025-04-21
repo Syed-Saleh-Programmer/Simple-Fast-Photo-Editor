@@ -80,7 +80,7 @@ We welcome contributions to the **Photo Editor App**! Here's how you can contrib
 2. **Clone the Forked Repository:**  
    Clone the repository to your local machine using:
    ```bash
-   git clone https://github.com/your-username/photo-editor-app.git
+   git clone https://github.com/Syed-Saleh-Programmer/photo-editor-app.git
 
 Go ahead and create your changes in a new branch for the feature and push your changes and create a pull request so that we can reveiw and merge your feature/bugfix into our app.
 
